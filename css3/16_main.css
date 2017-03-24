@@ -1,0 +1,44 @@
+#box p{
+	border:1px solid green;
+	font:bold 35px Tahoma;
+	width:250px;
+	height:100px;	
+	line-height:100px;	
+	text-align:center;
+	margin:100px auto;
+	color:#fff;
+	text-shadow:#f00 0px 0px 2px;
+	
+	/* transform:translate(50px,50px); */
+	/* transform:rotate(30deg); */
+	/* transform:scale(1,0.5); */
+	/* transform:skewY(-60deg); */
+	transform:translate(50px,50px) rotate(30deg) scale(1,0.5) skewY(-60deg);
+	
+	
+	/* transform:translate(100px,50px) rotate(30deg) scale(1,0.8);  */
+	
+	/* 
+	transform:translate(100px,50px); 
+	transform:rotate(30deg);
+	transform:scale(1,0.8);
+	transform:skewX(30deg);
+	*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

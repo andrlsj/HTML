@@ -1,0 +1,14 @@
+div{
+	font:bold 80px Comic Sans MS;
+	color:pink;
+}
+
+
+.myClass{
+	text-decoration:line-through;
+}
+
+#myId{
+	background:#ddd;
+	color:green;
+}

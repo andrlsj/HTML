@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset = "utf-8">
+	<link rel = "stylesheet" href="">
+	<script src=""></script>
+	<title>join</title>
+</head>
+
+
+<body>
+	<!--<form action = "mailto://~~" method= "post"> -->
+	
+	<form action = "www.google.com" method= "post">
+	<form>
+		<h2>加入會員</h2>
+		<p>
+			<label> 姓名:</label>
+			<input type="text" name ="name" required>
+		</P>
+	 
+		<p>
+			<label>密碼: </label>
+			<input type = "password" name ="pw" maxlength = "12" minlength="6">
+		</P>
+		
+		<p>
+			<label>姓別: </label>
+			<input type = "radio" name ="gender" value ="M" checked>男
+			<input type = "radio" name ="gender" value ="F">女
+			<input type = "radio" name ="gender" value ="N">不告訴你				
+		</P>
+		
+		<table>
+			<tr>
+				<td>
+					<fieldset>
+					<legend>性別: </legend>
+					<input type = "radio" name ="gender" value ="M" checked>男
+					<input type = "radio" name ="gender" value ="F">女
+					<input type = "radio" name ="gender" value ="N">不告訴你
+					</fieldset>
+				</td>
+			</tr>
+		</table>
+		
+		<p>
+			<label>興趣: </label>
+			<input type = "checkbox" name ="interest" value ="read" checked>閱讀
+			<input type = "checkbox" name ="interest" value ="movie" checked>電影
+			<input type = "checkbox" name ="interest" value ="sleep" >睡覺
+			<input type = "checkbox" name ="interest" value ="run" checked>跑步
+		</p>
+	
+		<p>
+		<label>血型: </label>
+			<select name = "blood">
+					<option value ="A" selected>A</option>
+					<option value ="B">B</option>
+					<option value ="O">O</option>
+					<option value ="AB">AB</option>
+					
+			</select>
+		</P>
+		
+		<p>
+			<label>留言</label>
+			<textarea name = "talk" rows = "5" cols ="20">Monkey</textarea>		
+		</p>
+		
+		<input type ="submit" value="送出">
+		<input type ="reset" value="重置">
+		<input type ="button" value="我是按紐">
+		<button><img src="/web/images/foot.gif"></button>
+		
+	</form>
+</body>
+
+</html>

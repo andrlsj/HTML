@@ -1,0 +1,46 @@
+*{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+	
+}
+
+
+#calendar{
+	width:364px;
+	border:1px solid red;
+	margin:50px auto;
+	
+}
+
+#calendar:after{
+	content:'';
+	display:block;
+	clear:both;
+	
+}
+
+#week li,#day li{
+	width:50px;
+	height:50px;
+	border:1px solid #aaa;
+	float:left;
+}
+
+#day li{
+	background:#fff;
+}
+
+#day li:empty{
+	background:transparent;
+}
+
+#week li:nth-child(7n),#week li:nth-child(7n+1){
+	color:blue;
+}
+#day li:nth-child(7n),#day li:nth-child(7n+1){
+	color:red;
+}
+
+
+

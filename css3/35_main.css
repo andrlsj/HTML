@@ -1,0 +1,25 @@
+p:last-child{
+	text-align:center;
+	color:steelblue;
+}
+
+#skin{
+	column-count:5;
+	column-rule:5px dashed #ccc;
+	column-gap:30px;
+}
+
+h1,p:last-child{
+	column-span:all;
+}
+
+
+
+
+
+
+
+
+
+
+

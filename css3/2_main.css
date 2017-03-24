@@ -1,0 +1,46 @@
+#skin{
+	width:200px;
+	/* height:200px; */
+	border:1px solid red;
+}
+
+/* *{
+	margin=0px;	
+} */
+
+/* #skin p{
+	color:red;
+} */
+
+p[/* name]{
+	color:red;
+}
+
+p[name="a"]{
+	color:blue;
+} */
+
+input[type="submit"],input[type="reset"],input[type="button"]{
+	width:80px;
+	text-transform:capitalize;	
+}
+
+/* a[href *= "google.com"]{
+	color:green;
+}
+ */
+a[href ^= "https"]{
+	color:red;
+}
+
+a[href $= "tw"]{
+	color:green;
+}
+
+/* p:nth-child(4){
+	color:purple;
+	
+} */
+
+p:not(.tmp){
+	color:red;

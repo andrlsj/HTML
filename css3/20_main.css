@@ -1,0 +1,41 @@
+@font-face{
+	font-family:facebook;	/* 自行命名 */
+	src:url(fonts/facebook-letter-faces.ttf);
+}
+
+#box{
+	border:1px solid #3D579D;
+	font:normal 35px facebook,Tahoma,Arial,Verdana;
+	width:200px;
+	text-align:center;
+	margin:100px auto;
+	color:#3D579D;
+	opacity:0.5;
+	
+	
+	transition:width 2s,transform 2s,background 5s,color 5s ,font-size 2s,opacity 3s;
+	
+}
+#box:hover{
+	width:450px;
+	transform:rotate(360deg);
+	background:#3D579D;
+	color:#fff;
+	font-size:50px;
+	opacity:1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

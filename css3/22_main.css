@@ -1,0 +1,31 @@
+#box{
+	width:200px;
+	height:200px;
+	background:#ccc;
+	
+	
+	transition:width 2s 0s,height 2s 2s,background 2s 4s;
+	
+}
+#box:hover{
+	width:500px;
+	height:500px;
+	background:red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

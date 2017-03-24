@@ -1,0 +1,34 @@
+
+
+@keyframes slide{
+	from{
+		margin-left:0%;
+	}
+	to{
+		margin-left:80%;
+	}
+}
+img{
+	animation-name:slide;
+	animation-duration:2s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+}
+p{
+	text-align:center;
+}
+button{
+	font:x-large Tahoma;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+#divtextId{
+	width:286px;
+	height:191px;
+	
+	font-size:12px;
+	font-family:Tahoma;
+	border:solid #509e51 2px;
+	position:absolute;
+	line-height:150%;
+	letter-spacing:0.1px;
+	
+	padding-top:15px;
+	padding-right:5px;
+	padding-bottom:25px;
+	padding-left:5px;
+	
+	margin-top:50px;
+	margin-left:50px;
+	background-color:#fff;
+	z-index=2;
+}
+
+#divPicId{
+	position:absolute;
+	z-index=1;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="4_main.css">
+		<script src="5_new.js"></script>
+		<title>storage access</title>
+	</head>
+	<body>
+		<p>
+			<label>key: </label>
+			<input type="text" id="keyText">
+		</p>
+		<p>
+			<label>value: </label>
+			<input type="text" id="valueText">
+		</p>
+		<hr>
+		<button id="setButton" onclick="storageAccess(0)">set item</button>
+		<button id="getButton" onclick="storageAccess(1)">get item</button>
+		<button id="removeButton" onclick="storageAccess(2)">remove item</button>
+		<button id="clearButton" onclick="storageAccess(3)">clear all</button>
+	</body>
+</html>

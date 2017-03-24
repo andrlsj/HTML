@@ -1,0 +1,42 @@
+
+label{
+	width:180px;
+	float:left;
+	font-weight:bold;
+}	
+	
+.fontClass{
+	font-family:Tahoma;
+}
+
+.fieldSetClass{
+	border-style:dotted;
+	border-color:#e6f4f8;
+}
+
+#legendId{
+	color:#3d42b2;
+	font-weight:bold;
+}
+
+#spanId{
+	text-decoration:underline
+}
+
+input{
+	border-bottom:solid blue 1px;
+	border-right:solid blue 1px;
+	background-color:#e3f2f7
+}
+
+#h1Id{
+	font-weight:lighter;
+}
+
+#buttonClass{
+	background-color:#9dd8e6;
+	color:#3d42b2;
+	border:solid #3d42b2 1px;
+}
+
+

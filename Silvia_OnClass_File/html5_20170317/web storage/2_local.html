@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="">
+		<script>
+			function showMessage(){
+				if(localStorage['book'] == null){
+					var bookName = prompt('What is the book title?');
+					localStorage['book'] = bookName;
+				}else{
+					alert(localStorage['book']);
+				}
+			}
+		</script>
+		<title>local storage</title>
+	</head>
+	<body>
+		<button onclick="showMessage()">show storage</button>
+	</body>
+</html>

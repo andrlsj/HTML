@@ -1,0 +1,33 @@
+#box{
+	border:1px solid green;
+	font:bold 35px Tahoma;
+	width:250px;
+	height:100px;
+	text-align:center;
+	margin:100px auto;
+	color:#fff;
+	text-shadow:#f00 0px 0px 2px;
+	
+	transition:width 2s,transform 3s;
+}
+
+
+#box:hover{
+	width:400px;
+	transform:rotate(30deg);
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

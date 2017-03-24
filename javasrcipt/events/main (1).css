@@ -1,0 +1,25 @@
+body{
+	font:120% Tahoma,Arial,Verdana;
+	text-transform:capitalize;
+	background:#ccc;
+}
+
+#theForm{
+	background:#fff;
+	margin:30px;
+	padding:15px;
+	width:210px;
+	border:1px solid #bbb;
+}
+
+fieldset div{
+	margin:10px 0px;
+}
+p{
+	font-size:12px;
+	color:red;
+}
+textarea{
+	resize:none;
+	width:170px;
+}
