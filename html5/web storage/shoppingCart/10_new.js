@@ -3,7 +3,7 @@ var storage = sessionStorage;
 function doFirst(){
    
    if(storage['addItemList'] == null){
-	   storage['addItemList'] = null;
+	   storage['addItemList'] = "";
 	   //storage.setItem('addItemList':'');
    }
    
@@ -44,6 +44,33 @@ function addItem(itemId,itemValue){
 	newItem.appendChild(image);
 	newItem.appendChild(title);
 	newItem.appendChild(price);
+	
+	//存入storage
+	if(storage[itemId]){
+		/* alert('Checked.'); */
+		console.log("you have checked")
+	}else{
+		storage['addItemList'] += itemId + ', ';
+		storage[itemId] = itemValue;
+	}
+	
+	//計算購買數量和小計
+	var itemString = storage.getItem('addItemList');	//var itemString = storage['addItemList'];
+	var items = itemString.substr(0,itemString.length-2).split(', ');
+	
+	console.log(items.length)
+		
+	var subtotal = 0;
+	for(var key in items){
+		var itemInfo = storage.getItem(items[key]);
+		var itemPrice = parseInt(itemInfo.split('|')[2]);
+		subtotal += itemPrice;
+	}
+
+	
+	document.getElementById('itemCount').innerText = items.length;
+	document.getElementById('subtotal').innerText = subtotal;
+	
 }
 
 window.addEventListener('load', doFirst, false);

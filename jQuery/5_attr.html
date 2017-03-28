@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery-3.2.0.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				/*
+				$(':submit').click(function(){
+					alert('hihihi')				
+				});
+				*/
+				
+				$(':submit').click(function(){
+					/*var a=$(this).attr('value');
+					alert(a);*/
+					$(this).attr('value','please waiting!');
+					
+				
+				});
+				
+				$('a').click(function(){
+					$(this).attr('href','http:/tw.yahoo.com');
+				
+				});
+				
+				
+				
+			});
+		</script>
+		<title>jQuery</title>
+	</head>
+	<body>
+		<input type="submit" value="SUBMIT">
+		<input type="submit" value="SUBMIT">
+		<p>
+			<a href="http://www.google.com">Google</a>
+		</p>
+	</body>
+</html>
