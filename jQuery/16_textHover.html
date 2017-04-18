@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -6,7 +7,28 @@
 		<script src="js/jquery-3.2.0.min.js"></script>			
 		<script>
 			$(document).ready(function(){
-		
+			//	動態偵測滑鼠座標
+				/*
+				$('.textHover').mousemove(function(e){
+					$('#feedback').text('X: '+ e.clientX+' Y: '+ e.clientY);
+				});
+				*/
+				
+				//$('.textHover').mousemove().mouseout();
+				$('.textHover').mousemove(function(e){
+					var theText = $(this).attr('hovertext');
+					$('#theDiv').text(theText).show().css({
+					
+						left:e.clientX+20;
+						top:e.clientY+20;
+					
+					}).mouseout(function(){
+					
+						$('#theDiv').hide();
+					});
+				
+				
+				
 			});			
 		</script>
 		<title>jQuery</title>
@@ -20,5 +42,9 @@
 		<p>
 			<img src="../images/limes.jpg" class="textHover" hovertext="Very fresh limes...">
 		</p>
+		
+		
+		<div id="theDiv"></div>
+
 	</body>
 </html>

@@ -6,12 +6,40 @@
 		<script src="js/jquery-3.2.0.min.js"></script>		
 		<script>
 			$(document).ready(function(){
+				/*
+				$('p').mouseenter(function(){
+					$(this).addClass('highlight');
+				}).mouseleave(function(){
+					$(this).removeClass('highlight');
+				});
+				*/
+				//$('p').bind(event,function(){}).bind(event,function(){});
+				/*
+				$('p').bind('mouseenter mouseleave',function(){
+					$(this).toggleClass('highlight');
+				});
+				*/
+				/*
+				$('p').on('mouseenter mouseleave',function(){
+					$(this).toggleClass('highlight');
+					});
+				*/
+				
+				$('p').on('mouseenter mouseleave','p',function(){
+				
+					$(this).toggleClass('highlight');
+				
+					});
+				
+				
+				
 			
-			});			
+			});	
+		
 		</script>
 		<title>jQuery</title>
 	</head>
 	<body>
-		
+		<p>ANN HELLO WORLD</p>
 	</body>
 </html>

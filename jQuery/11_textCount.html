@@ -6,6 +6,17 @@
 		<script src="js/jquery-3.2.0.min.js"></script>			
 		<script>
 			$(document).ready(function(){
+				var textMax = 70;
+				$('#feedback').html('<span style ="color:red;">'+textMax+'</span>'+ 'ramains');
+				
+				$('#talk').keyup(function(){
+				
+				var textLength = $(this).val().length;
+				var textRemaining = textMax-textLength;
+				$('#feedback').html('<span style ="color:red;">'+textRemaining+'</span>'+' ramains');
+				
+
+				});
 				
 			});			
 		</script>
