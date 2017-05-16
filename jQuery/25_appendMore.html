@@ -6,8 +6,15 @@
 		<script src="js/jquery-3.2.0.min.js"></script>		
 		<script>
 			$(document).ready(function(){
-				
-			});			
+				$('.food').click(function(){
+					var item = $(this).text();
+					
+					$('#mySelect').append('<option>'+item+'</option>');
+					$('#myList').append('<li>'+item+'</li>');
+					$('#myTable').attr('border',1).append('<tr><td>'+item+'</td></tr>');
+					
+				});
+			});				
 		</script>
 		<title>jQuery</title>
 	</head>
@@ -49,6 +56,16 @@
 		</p>
 		<hr>
 		<h2>Your choices : </h2>
+		<!--create a drop-down menu-->
+		<select id="mySelect"></select>
+		
+		<!--create an ordered list-->
+		<ol id="myList"></ol>
+		
+		<!--create a table-->
+		<table id="myTable"></table>
+
+		
 		
 	</body>
 </html>

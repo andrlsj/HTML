@@ -7,6 +7,39 @@
 		<script>
 			$(document).ready(function(){
 				
+				
+			/*=====使用CSS尋找寬度和高度
+				var imgWidth = $('img').css('width');
+				var imgHeight = $('img').css('height');
+				
+				$('#feedback').text('Width: '+imgWidth+' | Height: '+imgHeight);
+			=====*/
+
+				
+			
+				var imgWidth = $('img').width();
+				var imgHeight = $('img').height();
+				
+				var winWidth = $(window).width();
+				var winHeight = $(window).height();
+				
+				
+				
+				
+				//$('#feedback').text('width :'+imgWidth+ " || "+ 'height: '+imgHeight);
+				//$('#feedback').text('Width: '+winWidth+' | Height: '+winHeight);
+
+				
+				$('img').css({
+					width:winWidth+'px',
+					height:winHeight+'px'
+				});
+							
+				
+				
+				
+				
+				
 			});			
 		</script>
 		<title>jQuery</title>

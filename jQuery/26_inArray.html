@@ -6,7 +6,22 @@
 		<script src="js/jquery-3.2.0.min.js"></script>		
 		<script>
 			$(document).ready(function(){
+				var breads = ["aa","bb","cc","dd"];
+				$('#checkButton').click(function(){
 				
+					var bread = $('#bread').val();
+					
+					if($.inArray(bread,breads) != -1){
+						$('#feedback').html(bread+'inArray');
+						
+					
+					
+					}else{
+						$('#feedback').html(bread+'Not inArray');
+					};
+				
+				});
+
 			});			
 		</script>
 		<title>jQuery</title>

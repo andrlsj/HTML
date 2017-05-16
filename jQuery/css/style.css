@@ -63,7 +63,13 @@
 }
 
 
+#inCenter{
+	width:200px;
+	height:200px;
+	background:navy;
+	position:absolute;
 
+}
 
 
 

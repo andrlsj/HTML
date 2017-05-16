@@ -6,7 +6,26 @@
 		<script src="js/jquery-3.2.0.min.js"></script>		
 		<script>
 			$(document).ready(function(){				
-			
+				
+				moveCenter();
+				
+				$(window).resize(function(){
+					moveCenter();				
+				});
+								
+				function moveCenter(){
+					var divWidth = $('#inCenter').width();
+					var divHeight = $('#inCenter').height();
+					
+					var winWidth = $(window).width();
+					var winHeight = $(window).height();
+
+					$('#inCenter').css({
+						left:(winWidth - divWidth)/2,
+						top:(winHeight - divHeight)/2
+					
+					});				
+				};
 			});			
 		</script>
 		<title>jQuery</title>
